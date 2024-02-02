@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
+import 'package:xarala_cour1/src/pages/checkout_page/checkout_page.dart';
 import 'package:xarala_cour1/src/utils/colors.dart';
 import 'package:xarala_cour1/src/widgets/custom_dawer/custom_drawer.dart';
 import 'package:xarala_cour1/src/widgets/custome_text.dart';
@@ -112,6 +113,12 @@ class HomePage extends StatelessWidget {
                               color: whiteColor,
                             ),
                           ),
+                          onTap: (){
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => const CheckoutPage()),
+                            );
+                          },
                         ),
                         GradientCard(
                           padding: const EdgeInsets.symmetric(horizontal: 20),

@@ -30,6 +30,7 @@ environment:
 dependencies:
   google_fonts: ^6.1.0
   flutter_advanced_drawer: ^1.3.5
+  fayaalma_checkout: ^0.0.3
   flutter:
     sdk: flutter
 

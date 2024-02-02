@@ -6,6 +6,7 @@ class GradientCard extends StatelessWidget {
   final double? width, height;
   final EdgeInsetsGeometry? padding, margin;
   final bool withGradien;
+  final void Function()? onTap;
   const GradientCard({
     super.key,
     this.child,
@@ -14,28 +15,34 @@ class GradientCard extends StatelessWidget {
     this.padding,
     this.withGradien = false,
     this.margin,
+    this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: width,
-      height: height,
-      padding: padding,
-      margin: margin,
-      decoration: BoxDecoration(
-        color: !withGradien? lightGreyColor.withOpacity(0.7): null,
-        gradient: withGradien? LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            bleuColor.withOpacity(0.25),
-            bleuColor.withOpacity(0.95),
-          ],
-        ): null,
-        borderRadius: BorderRadius.circular(10),
+    return InkWell(
+      onTap: onTap,
+      child: Container(
+        width: width,
+        height: height,
+        padding: padding,
+        margin: margin,
+        decoration: BoxDecoration(
+          color: !withGradien ? lightGreyColor.withOpacity(0.7) : null,
+          gradient: withGradien
+              ? LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    bleuColor.withOpacity(0.25),
+                    bleuColor.withOpacity(0.95),
+                  ],
+                )
+              : null,
+          borderRadius: BorderRadius.circular(10),
+        ),
+        child: child,
       ),
-      child: child,
     );
   }
 }

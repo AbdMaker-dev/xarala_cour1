@@ -57,6 +57,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.6"
+  dio:
+    dependency: transitive
+    description:
+      name: dio
+      sha256: "797e1e341c3dd2f69f2dad42564a6feff3bfb87187d05abb93b9609e6f1645c3"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.4.0"
   fake_async:
     dependency: transitive
     description:
@@ -65,6 +73,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.3.1"
+  fayaalma_checkout:
+    dependency: "direct main"
+    description:
+      name: fayaalma_checkout
+      sha256: "9d25008de198294c7d7d0f78d56e86ce390bac22b1c7be776725f5f719507478"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.3"
   ffi:
     dependency: transitive
     description:
@@ -86,6 +102,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.3.5"
+  flutter_easyloading:
+    dependency: transitive
+    description:
+      name: flutter_easyloading
+      sha256: ba21a3c883544e582f9cc455a4a0907556714e1e9cf0eababfcb600da191d17c
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.5"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -94,6 +118,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.3"
+  flutter_spinkit:
+    dependency: transitive
+    description:
+      name: flutter_spinkit
+      sha256: b39c753e909d4796906c5696a14daf33639a76e017136c8d82bf3e620ce5bb8e
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.2.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -123,6 +155,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.0.2"
+  intl:
+    dependency: transitive
+    description:
+      name: intl
+      sha256: "3bc132a9dbce73a7e4a21a17d06e1878839ffbf975568bc875c60537824b0c4d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.18.1"
   lints:
     dependency: transitive
     description:
